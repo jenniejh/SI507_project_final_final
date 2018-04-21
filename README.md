@@ -4,7 +4,7 @@
    - Parameters for scraping and crawling
      1) state name
      2) program = 175 and degree = 4
-        # Restrict to schools that grant doctorate degree in sociology (to simplfy the project)
+        Restrict to schools that grant doctorate degree in sociology (to simplfy the project)
      3) page
    - Example for constructing the URL:
      1) First search by state and limit schools with doctorate degree in sociology in the U.S.
@@ -63,12 +63,12 @@
 4. Step 4: Read the CSV file as well as another CSV file about U.S. states 
            ("us census bureau regions and divisions.csv") into a database named "schoolinfo.db".
 5. Step 5: Grab data from the database with four kinds of queries which are created by functions:
-           # sql_schools(command): lists of schools, according to specified parameters.
-           # sql_states(command): lists of states, according to specified parameters.
-           # sql_locales(command): lists of locales, according to specified parameters.
-           # sql_regions(command): lists of regions, according to specified parameters.
+           - sql_schools(command): lists of schools, according to specified parameters.
+           - sql_states(command): lists of states, according to specified parameters.
+           - sql_locales(command): lists of locales, according to specified parameters.
+           - sql_regions(command): lists of regions, according to specified parameters.
 6. Step 6: Use Plotly to produce graphs with the data grabbed from the database.
-           # A Class Premap() is used here to create the list of school instances for mapping.
+           - A Class Premap() is used here to create the list of school instances for mapping.
 7. Step 7: Create a interactive prompt for users to choose data/visualization options.
 
 
