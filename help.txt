@@ -1,0 +1,79 @@
+SPECIAL NOTES:
+1. Options for locale type includes: rural, surburb, city, town
+2. For region names, capitalize the first letter of the name, 
+   e.g., West, Northeast
+3. For state names, use capitalized abbreviation, e.g., MI, MD
+
+COMMANDS AVAILABLE:
+schools
+    Description: lists schools, according to specified parameters.
+    Options:
+        * region=<name>|state=<name>|locale=<type> [default:none]
+          - Description: specifies a state or region or locale within which to 
+            limit the results.
+        * student|international|faculty|tuition [default: tuition]
+          - Description: Specifies whether to sort by the number of all students,
+            the number of international students, the number of faculty, or the 
+            amount of tuition.
+        * top=<limit>|bottom=<limit> [default: top=10]
+          - Description: Specifies whether to list the top <limit> matches or the
+		    bottom <limit> matches.
+
+states
+    Description: lists states for schools, according to the specified parameters.
+    Options:
+        * region=<name> |locale=<type> [default:none]
+          - Description: specifies a region or locale within which to limit the 
+            results.
+        * student|international|faculty|tuition [default: tuition]
+          - Description: Specifies whether to sort by the number of all students,
+            the number of international students, the number of faculty, or the 
+            amount of tuition.
+        * top=<limit>|bottom=<limit> [default: top=10]
+          - Description: Specifies whether to list the top <limit> matches or the
+            bottom <limit> matches.
+
+locales
+    Description: lists locales for schools, according to specified parameters.
+    Locale type includes rural, surburb, town, city.
+    Options:
+        * state=<name>|region=<name> [default:none]
+          - Description: specifies a state or region within which to limit the 
+            results.
+        * student|international|faculty|tuition [default: tuition]
+          - Description: Specifies whether to sort by the number of all students,
+            the number of international students, the number of faculty, or the 
+            amount of tuition.
+        * top=<limit>|bottom=<limit> [default: top=10]
+          - Description: Specifies whether to list the top <limit> matches or the
+            bottom <limit> matches.
+
+regions
+    Description: lists regions for schools, according to specified parameters.
+    Options:
+        * locale=<type> [default:none]
+          - Description: specifies a locale within which to limit the results.
+        * student|international|faculty|tuition [default: tuition]
+          - Description: Specifies whether to sort by the number of all students,
+            the number of international students, the number of faculty, or the 
+            amount of tuition.
+        * top=<limit>|bottom=<limit> [default: top=10]
+          - Description: Specifies whether to list the top <limit> matches or the
+            bottom <limit> matches.
+
+map
+    Displays the current results on a map.
+    Available only if there is an active result set.
+
+chart  
+    Options:
+        * tuition|demo
+          - Description: displays a barchart/group barchart of tuition/school demography across the schools/states/locales/regions of interest.
+    Displays a barchart for the current results.
+    Available only if there is an active result set.
+    
+exit
+    Exits the program
+
+help
+    Lists available commands (these instructions)
